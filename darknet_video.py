@@ -462,7 +462,6 @@ def parkedcars(detections,img,B):
         C = [pt3[0],pt3[1]]
         if Alpah[2] == 'car' or Alpah[2] == 'truck':
                 B.append(C)
-                print(C)
     return img
 
 def performBatchDetect(thresh= 0.25,imagePath ='./image_0/{0}_{1}.png'.format(b.tm_hour,b.tm_min), configPath = "./cfg/yolov4_custom_test.cfg", weightPath = "./yolov4_custom_train_last.weights",metaPath= "./cfg/obj.data", hier_thresh=.5, nms=.45, batch_size=3):
